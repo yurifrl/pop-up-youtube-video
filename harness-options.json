@@ -1,0 +1,109 @@
+{
+ "enable_e10s": false, 
+ "is-sdk-bundled": true, 
+ "jetpackID": "jid0-AkqRbdPNieEh9P05Aq9SHXO0XBE@jetpack", 
+ "loader": "addon-sdk/lib/sdk/loader/cuddlefish.js", 
+ "main": "main", 
+ "mainPath": "pop-up-youtube-video/main", 
+ "manifest": {
+  "pop-up-youtube-video/main": {
+   "docsSHA256": null, 
+   "jsSHA256": "cdb52da8b339be298243af147d54b8df13d917f03e58ce9ca60ef6097d55ecb6", 
+   "moduleName": "main", 
+   "packageName": "pop-up-youtube-video", 
+   "requirements": {
+    "self": "sdk/self", 
+    "tabs": "sdk/tabs", 
+    "toolbarbutton": "toolbar-button-sdk/toolbarbutton"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "toolbar-button-sdk/persist": {
+   "docsSHA256": null, 
+   "jsSHA256": "c4ba644f125e08a4325444fa80c268c063231d88d27d3aecb4fb5a52c662b0e7", 
+   "moduleName": "persist", 
+   "packageName": "toolbar-button-sdk", 
+   "requirements": {
+    "sdk/preferences/service": "sdk/preferences/service", 
+    "sdk/self": "sdk/self", 
+    "sdk/system/unload": "sdk/system/unload", 
+    "sdk/window/utils": "sdk/window/utils"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "toolbar-button-sdk/toolbarbutton": {
+   "docsSHA256": null, 
+   "jsSHA256": "f9ab1413971ef0b18d31ca3f5a9e66b50599be3528c6d9b227af4c82cce4c343", 
+   "moduleName": "toolbarbutton", 
+   "packageName": "toolbar-button-sdk", 
+   "requirements": {
+    "./persist": "toolbar-button-sdk/persist", 
+    "listen": "vold-utils/listen", 
+    "sdk/window/utils": "sdk/window/utils", 
+    "unload+": "vold-utils/unload+", 
+    "window-utils": "sdk/deprecated/window-utils"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "vold-utils/listen": {
+   "docsSHA256": null, 
+   "jsSHA256": "74057caf6a837e6c8a3e8e73762b1bc08e69e6e087bee5401580a9249a34701c", 
+   "moduleName": "listen", 
+   "packageName": "vold-utils", 
+   "requirements": {
+    "unload+": "vold-utils/unload+"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "vold-utils/unload+": {
+   "docsSHA256": null, 
+   "jsSHA256": "0cc972b1ac0ccd44801915b8e3ece122087fe72073886a759c38b857a956c058", 
+   "moduleName": "unload+", 
+   "packageName": "vold-utils", 
+   "requirements": {
+    "unload": "sdk/system/unload"
+   }, 
+   "sectionName": "lib"
+  }
+ }, 
+ "metadata": {
+  "addon-sdk": {
+   "description": "Add-on development made easy.", 
+   "keywords": [
+    "javascript", 
+    "engine", 
+    "addon", 
+    "extension", 
+    "xulrunner", 
+    "firefox", 
+    "browser"
+   ], 
+   "license": "MPL 2.0", 
+   "name": "addon-sdk"
+  }, 
+  "pop-up-youtube-video": {
+   "author": "yurifrl", 
+   "description": "Make a Youtube video in to Pop-up", 
+   "main": "main", 
+   "name": "pop-up-youtube-video", 
+   "version": ".rev87"
+  }, 
+  "toolbar-button-sdk": {
+   "author": "globex-designs-inc", 
+   "description": "Creates a toolbar addon button with an optional popup dropdown menu. Basically, the thing that virtually all addons will need to do at one point.\n\nLibrary includes examples and documentation.\n\nExpands on Erik Vold&#39;s Toolbar Button code.\n\nFor feedback or to contribute, feel free to contact me at evgueni@globexdesigns.com", 
+   "main": "lib/index", 
+   "name": "toolbar-button-sdk", 
+   "version": "2.0.rev152"
+  }, 
+  "vold-utils": {
+   "author": "erikvold", 
+   "main": "lib/index", 
+   "name": "vold-utils", 
+   "version": "v1.3"
+  }
+ }, 
+ "name": "pop-up-youtube-video", 
+ "sdkVersion": "1.14", 
+ "staticArgs": {}, 
+ "verbose": false
+}
